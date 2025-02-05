@@ -6,15 +6,17 @@ require "binding_of_caller"
 
 
 get "/" do
-    "
-    <h1>Welcome to Rock-Paper-Scissors!</h1>
-    <ul>
-      <li><a href='/rock'>Play Rock</a></li>
-      <li><a href='/paper'>Play Paper</a></li>
-      <li><a href='/scissors'>Play Scissors</a></li>
-    </ul>
-    "
-  end
+  "
+  <h1>Welcome to Rock-Paper-Scissors!</h1>
+  <ul>
+    <li><a href='/rock'>Play Rock</a></li>
+    <li><a href='/paper'>Play Paper</a></li>
+    <li><a href='/scissors'>Play Scissors</a></li>
+    <li><a href='https://en.wikipedia.org/wiki/Rock_paper_scissors'>Rules</a></li>
+  </ul>
+  "
+end
+
   
 
 

@@ -61,5 +61,5 @@ get ("/scissors") do
   else
     @outcome = "lost"
   end
-  erb(:paper)
+  erb(:scissors)
 end

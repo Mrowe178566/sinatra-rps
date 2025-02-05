@@ -1,24 +1,26 @@
-"
-  <h2>
-    We played scissors!
-  </h2>
+<h1>Scissors</h1>
+<p><a href="/">Back to Homepage</a></p>
 
-  <h2>
-   They played <%= @comp_move %>
-  </h2>
+<h2>
+  We played scissors!
+</h2>
 
+<h2>
+  They played <%= @comp_move %>
+</h2>
 
-  <% if @outcome == "won" %>
+<% if @outcome == "won" %>
   <h2 style="color:green">
-  we <%= @outcome %>
+    we <%= @outcome %>
   </h2>
-  <% elsif @outcome == "lost" %>
+<% elsif @outcome == "lost" %>
   <h2 style="color:red">
-  we <%= @outcome %>
+    we <%= @outcome %>
   </h2>
-  <% else %>
+<% else %>
   <h2 style="color:black">
-  we <%= @outcome %>
+    we <%= @outcome %>
   </h2>
-  <% end %>
+<% end %>
+
   

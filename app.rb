@@ -53,8 +53,8 @@ get "/paper" do
 end
 
 
-get ("/scissors") do
-  moves = ["rock","paper","scissors"]
+get "/scissors" do
+  moves = ["rock", "paper", "scissors"]
   @comp_move = moves.sample
 
   if @comp_move == "rock"
@@ -62,7 +62,8 @@ get ("/scissors") do
   elsif @comp_move == "paper"
     @outcome = "won"
   else
-    @outcome = "lost"
+    @outcome = "tied"
   end
-  erb(:scissors)
+  erb :scissors
 end
+
